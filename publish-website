@@ -21,8 +21,9 @@ trap cleanup EXIT
 
 # export the artifacts from this repo to the temporary directory
 # mkdir $tmpdir/
-cp -r build/* $tmpdir/
-echo "Published to $tmpdir/"
+mkdir $tmpdir/build
+cp -r build/* $tmpdir/build
+echo "Published to $tmpdir/build"
 
 # clone the public
 cd $tmpdir
@@ -31,7 +32,7 @@ git clone -b gh-pages ssh://git@github.com/eldridgejm/$REMOTE
 # synchronize the remote with the expanded artifacts
 cd $REMOTE/ && rm -rf *
 cd ..
-cp -r exported/* $REMOTE
+cp -r build/* $REMOTE
 
 # publish them
 cd $REMOTE 
