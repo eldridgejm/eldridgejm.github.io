@@ -1,0 +1,43 @@
+@media (max-width: 992px) {
+    img#me {
+        width: 100%;
+    }
+}
+
+div#intro {
+    margin-top: 7.5%;
+}
+
+dt.section {
+    text-align: left;
+    padding-right: 0;
+}
+
+@media (min-width: 767px) {
+    dt.section{
+        text-align: right;
+    }
+}
+
+ul.achievements {
+    padding-left: 1em;
+}
+
+ul.achievements li {
+    margin-bottom: 1em;
+}
+
+span.attention {
+    font-style: italic;
+}
+
+span.pubtitle {
+    font-size: 12pt;
+    font-style: italic;
+}
+
+blockquote {
+    opacity: .6;
+    font-style: italic;
+    margin-left: 2em;
+}
