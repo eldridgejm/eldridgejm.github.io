@@ -106,9 +106,10 @@ few months. Following these instructions will help me stay sane!
 
 3. Typically, an application allows you to send an "invitation" to submit your
    letter to my email address. It is ideal if you send the letter invitations
-   for all of your applications at one time (all on the same day). If this is
-   not possible, please send the letter invitations in *as few batches as
-   possible*.
+   for all of your applications at one time (all on the same day).  If you have
+   many applications, it is preferable that you wait to send out invitations
+   until you can send the invitations all at once.  If this is not possible,
+   please send the letter invitations in *as few batches as possible*.
 
 4. I will process your letter requests in batches, generally within two weeks of
    them arriving in my inbox. I use my email inbox as my "todo" list for letter
