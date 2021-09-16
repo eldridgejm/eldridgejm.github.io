@@ -15,7 +15,7 @@ jobs:
         extra_nix_config: |
           experimental-features = nix-command flakes
           access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-    - run: nix develop -c ./mksite
+    - run: nix develop -c ./bin/mksite
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
