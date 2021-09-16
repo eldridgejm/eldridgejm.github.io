@@ -1,3 +1,5 @@
 # eldridgejm.github.io
 
-To publish, run `make publish`.
+To publish, simply push to GitHub. The website is built using GitHub actions.
+
+To preview locally, run `make`.
