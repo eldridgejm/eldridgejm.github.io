@@ -2,9 +2,7 @@
 
 If you've reached this page, you're likely interested in asking me for a letter
 of recommendation (or you already have!). I am happy to provide letters, and
-consequently submit several hundred each year. It's almost a second job!  This
-page contains instructions on how to request a letter of recommendation and what
-information to provide so that I can write you the best letter possible
+consequently submit several hundred each year. It's almost a second job!
 
 Before requesting a letter from me, however, you should be sure that my letter
 makes sense for your application. The next section will describe what to
@@ -64,8 +62,9 @@ will be able to write you a "good" letter or a "standard" one. A helpful rule of
 thumb here is to ask what I can say about you that isn't already in your
 transcripts. If you conclude that I would likely write a "standard" letter, you
 should follow up by asking yourself if there might be someone else who can write
-you a "good" letter. Again, I'm happy to write a letter for you -- but not at
-the cost of weakening your application!
+you a "good" letter. If you're still wondering whether my letter will be a
+"good" letter or a "standard" one, feel free to ask; I'll give my honest
+assessment.
 
 ## Does a "standard" letter hurt your chances?
 
@@ -83,43 +82,5 @@ understanding the role of recommendations, mistakenly choose their letter
 writers based on the classes in which they received the highest grade as opposed
 to who knows them best.
 
-## Instructions for requesting a letter
-
-If you've read the above and would like to request that I write a letter for
-you, here's how to do so in a way that will help me efficiently write the best
-letter possible. Please keep in mind that I submit letters to around 500
-applications each year -- if we estimate that it takes me ~3 minutes to submit a
-letter, that's already over 24 hours of work, all concentrated in the span of a
-few months. Following these instructions will help me stay sane!
-
-1. Send me an email with your letter request and the following information:
-    - the courses you took with me (quarter and year) and your grades in them
-    - the type of program(s) you're applying for (e.g., M.S. in statistics)
-    - what you hope to do after graduating (e.g., work as a data engineer in industry)
-    - any miscellaneous things I can add to your letter that say something about
-      you that isn't in your transcripts. (e.g., came to office hours regularly,
-      got the highest accuracy on the machine learning project)
-    - your pronouns (they, he, she, etc.)
-
-2. I'll respond and let you know whether I can write you a "standard" letter or
-   a "good" letter. In most cases, I'll be able to write a "standard" letter.
-
-3. Typically, an application allows you to send an "invitation" to submit your
-   letter to my email address. It is ideal if you send the letter invitations
-   for all of your applications at one time (all on the same day).  If you have
-   many applications, it is preferable that you wait to send out invitations
-   until you can send the invitations all at once.  If this is not possible,
-   please send the letter invitations in *as few batches as possible*.
-
-4. I will process your letter requests in batches, generally within two weeks of
-   them arriving in my inbox. I use my email inbox as my "todo" list for letter
-   writing -- once I've cleared my inbox of all of the requests I have for you,
-   I will send you an email letting you know that I have no more letters left to
-   submit. If this is incorrect and there are letters remaining, please let me
-   know.
-
-5. I don't keep track of your letter's due date. Instead, I complete it within
-   two weeks of the request being sent. As a consequence, make sure you send me
-   the invitations to submit your letters at least two weeks before they are
-   due. Likewise, if it comes to within a week of your letter's deadline and I
-   have not submitted it yet, please give me a gentle reminder!
+If you've already asked me to write a recommendation, but after reading this
+you're reconsidering, please tell me -- I don't take it personally!
