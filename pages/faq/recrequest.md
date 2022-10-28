@@ -84,3 +84,19 @@ to who knows them best.
 
 If you've already asked me to write a recommendation, but after reading this
 you're reconsidering, please tell me -- I don't take it personally!
+
+## Small Details
+
+Some applications will ask you to include things such as my title, phone number,
+address, email, and so on.
+
+For the email, you should use `jeldridge@ucsd.edu`.
+
+My title is "Assistant Teaching Professor".
+
+For the address/phone, you can simply use UCSD's phone and address:
+
+<pre>
+9500 Gilman Dr, La Jolla, CA 92093
+(858) 534-2230
+</pre>
