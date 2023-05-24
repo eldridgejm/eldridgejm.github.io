@@ -9,18 +9,18 @@ makes sense for your application. The next section will describe what to
 expect from my letter and help you decide whether it will help (or hurt!) your
 chances.
 
-## What is a "good" letter, and can I write you one?
+## What is a "strong" letter, and can I write you one?
 
-A "good" letter of recommendation is one that says something positive about you
+A "strong" letter of recommendation is one that says something positive about you
 that *is not demonstrated by your other application materials*.  For example, a
-"good" letter may testify to your strong work ethic, your passion for building a
+"strong" letter may testify to your strong work ethic, your passion for building a
 community, or your unique insight in solving a hard problem.
 
-I would love to write all of my students a "good" letter. Unfortunately, the
+I would love to write all of my students a "strong" letter. Unfortunately, the
 reality is that if you haven't worked with me outside of class -- either on a
 project or as a tutor or TA -- I may not be able to say much about you that
 isn't already said by your transcripts. Consequently, I would hesitate to say
-that I can write you a "good" letter -- instead, I can write what might be
+that I can write you a "strong" letter -- instead, I can write what might be
 called a "standard" letter.
 
 A "standard" letter is a testament to your performance in my class(es). It
@@ -58,12 +58,12 @@ you only through class, your letter will look quite similar.
 > program.
 
 Before asking me to write a letter for you, you should first consider whether I
-will be able to write you a "good" letter or a "standard" one. A helpful rule of
+will be able to write you a "strong" letter or a "standard" one. A helpful rule of
 thumb here is to ask what I can say about you that isn't already in your
 transcripts. If you conclude that I would likely write a "standard" letter, you
 should follow up by asking yourself if there might be someone else who can write
-you a "good" letter. If you're still wondering whether my letter will be a
-"good" letter or a "standard" one, feel free to ask; I'll give my honest
+you a "strong" letter. If you're still wondering whether my letter will be a
+"strong" letter or a "standard" one, feel free to ask; I'll give my honest
 assessment.
 
 ## Does a "standard" letter hurt your chances?
@@ -72,12 +72,12 @@ My hope as an instructor is to provide you with the best training and advice for
 your future. Therefore I feel it would be academic malpractice not to warn you
 that a "standard" letter might actually *hurt* your chances at being admitted to
 very competitive programs. A top school might expect you to be able to find
-three people who can write you "good" letters, and including a "standard" letter
+three people who can write you "strong" letters, and including a "standard" letter
 in your application is a signal that you were unable to do so.
 
 That said, I feel that admissions committees must be realistic. At a large
 school like UCSD, it can be hard to find three people who know you well enough
-to write three good letters. But I also believe that many students, not
+to write three "strong" letters. But I also believe that many students, not
 understanding the role of recommendations, mistakenly choose their letter
 writers based on the classes in which they received the highest grade as opposed
 to who knows them best.
@@ -92,7 +92,7 @@ address, email, and so on.
 
 For the email, you should use `jeldridge@ucsd.edu`.
 
-My title is "Assistant Teaching Professor".
+My position is "Assistant Teaching Professor". My title is "Dr. Justin Eldridge".
 
 For the address/phone, you can simply use UCSD's phone and address:
 
