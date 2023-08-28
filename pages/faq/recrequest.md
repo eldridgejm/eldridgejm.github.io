@@ -4,16 +4,19 @@ If you've reached this page, you're likely interested in asking me for a letter
 of recommendation (or you already have!). I am happy to provide letters, and
 consequently submit several hundred each year. It's almost a second job!
 
-Before requesting a letter from me, however, you should be sure that my letter
-makes sense for your application. The next section will describe what to
-expect from my letter and help you decide whether it will help (or hurt!) your
-chances.
+To request that I write you a letter, simply send me an email. I will write a
+recommendation letter for anyone who asks. That said, sometimes you might be
+better served by having someone else write your letter, as I explain below.
+
+Before requesting a letter from me you should be sure that my letter makes
+sense for your application. The next section will describe what to expect from
+my letter and help you decide whether it will help (or hurt!) your chances.
 
 ## What is a "strong" letter, and can I write you one?
 
 A "strong" letter of recommendation is one that says something positive about you
 that *is not demonstrated by your other application materials*.  For example, a
-"strong" letter may testify to your strong work ethic, your passion for building a
+"strong" letter may testify to your fantastic work ethic, your passion for building a
 community, or your unique insight in solving a hard problem.
 
 I would love to write all of my students a "strong" letter. Unfortunately, the
