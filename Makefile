@@ -3,7 +3,7 @@ SHELL = /usr/bin/env bash
 SOURCE_FILES = $(shell fd . pages/ --no-ignore)
 
 
-.PHONY: build publish clean
+.PHONY: build clean
 
 build: .build_sentinel
 
