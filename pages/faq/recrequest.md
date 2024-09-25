@@ -95,7 +95,7 @@ address, email, and so on.
 
 For the email, you should use `jeldridge@ucsd.edu`.
 
-My position is "Assistant Teaching Professor". My title is "Dr. Justin Eldridge".
+My position is "Associate Teaching Professor". My title is "Dr. Justin Eldridge".
 
 For the address/phone, you can simply use UCSD's phone and address:
 
