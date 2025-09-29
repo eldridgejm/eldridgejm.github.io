@@ -10,7 +10,6 @@ build
 *.csr
 *.css
 *.htm
-*.html
 *.js
 *.jsp
 *.php
