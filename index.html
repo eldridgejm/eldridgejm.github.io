@@ -195,7 +195,7 @@ Delivered May 13, 2015 in the AI Seminar at The Ohio State University<br />
               clickTimes = clickTimes.filter((t) => now - t < clickWindowMs);
               clickTimes.push(now);
 
-              if (clickTimes.length >= 2 && !bouncing) {
+              if (clickTimes.length >= 3 && !bouncing) {
                 // Easter egg: bounce the portrait like a DVD logo.
                 startBounce();
               }
