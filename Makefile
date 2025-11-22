@@ -8,8 +8,8 @@ SOURCE_FILES = $(shell fd . pages/ --no-ignore)
 build: .build_sentinel
 
 clean:
-	rm -rf build
+	rm -rf _build
 
 .build_sentinel: ${SOURCE_FILES} pages/
-	mkdir -p build
+	mkdir -p _build
 	./bin/mksite

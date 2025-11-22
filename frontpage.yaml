@@ -1,0 +1,63 @@
+title: "justin eldridge" # Page <title> text.
+
+me:
+  name: "justin eldridge"
+  blurb: "is an Associate Teaching Professor in the [data science program](http://datascience.ucsd.edu/) at [UC San Diego](https://ucsd.edu/)."
+  photo: "./static/me.png"
+  photo_alt: "Portrait of Justin Eldridge"
+  email: "jeldridge@ucsd.edu"
+  office: "HDSI 346 (3rd floor, end of east hallway)"
+  office_hours: "Tuesdays from 10:30 am to Noon in HDSI 346 (up-to-date as of Fall 2025)"
+
+# Content sections. Each key under `sections` is the section name.
+# The value is either a single Markdown string or a list of Markdown strings.
+sections:
+  teaching: "[DSC 80](http://dsc80.com)"
+  publications:
+    - |
+      *Unperturbed: spectral analysis beyond Davis-Kahan.*
+      J. Eldridge, M. Belkin, Y. Wang.
+      ALT 2018
+      [arXiv](https://arxiv.org/abs/1706.06516)
+    - |
+      *Graphons, mergeons, and so on!*
+      J. Eldridge, M. Belkin, Y. Wang.
+      NIPS 2016 — *Oral presentation (top ~2% of submissions)*
+      [arXiv](https://arxiv.org/abs/1607.01718) | [video of talk](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Graphons-mergeons-and-so-on) | [4 minute "movie trailer"](https://youtu.be/ZaggyzY02lY)
+    - |
+      *Beyond Hartigan Consistency: Merge Distortion Metric for Hierarchical Clustering.*
+      J. Eldridge, M. Belkin, Y. Wang.
+      COLT 2015 — *Mark Fulk award for best student paper*
+      [arXiv](http://arxiv.org/abs/1506.06422)
+    - |
+      *Robust features for the automatic identification of autism spectrum disorder in children.*
+      J. Eldridge, A.E. Lane, M. Belkin, S. Dennis.
+      Journal of Neurodevelopmental Disorders, 2014
+      [pdf](http://www.jneurodevdisorders.com/content/6/1/12)
+  talks:
+    - |
+      *Clustering Correctly.*
+      Delivered November 13, 2017 at Tulane University.
+      [slides](./static/talks/tulane.pdf)
+    - |
+      *Graphons, mergeons, and so on!*
+      Delivered December 13, 2016 at DIBRIS, Genoa.
+      [slides](./static/talks/dibris.pdf)
+    - |
+      *Graphons, mergeons, and so on!*
+      Delivered December 6, 2016 at NIPS 2016, Barcelona.
+      [slides](./static/talks/nips.pdf) | [video of talk](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Graphons-mergeons-and-so-on) | [4 minute "movie trailer"](https://youtu.be/ZaggyzY02lY)
+    - |
+      *Graphons, mergeons, and so on!*
+      Delivered June 18, 2016 at WoGaML, Boston
+      [slides](./static/talks/wogaml_2016.pdf)
+    - |
+      *Beyond Hartigan Consistency.*
+      Delivered July 4, 2015 at COLT 2015, Paris
+      [slides](./static/talks/colt_2015.pdf)
+    - |
+      *What do we seek in a hierarchical clustering?*
+      Delivered May 13, 2015 in the AI Seminar at The Ohio State University
+      [slides](./static/talks/ai_seminar_05_2015.pdf)
+  dissertation: |-
+    *Clustering Consistently* | [pdf](./static/dissertation.pdf)

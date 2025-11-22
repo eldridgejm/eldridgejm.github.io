@@ -1,5 +1,5 @@
 {
-  inputs.nixpkgs.url = github:NixOS/nixpkgs/22.05;
+  inputs.nixpkgs.url = github:NixOS/nixpkgs/25.05;
 
   outputs = { self, nixpkgs }: 
     let
@@ -22,17 +22,11 @@
                 (
                   pkgs.python3.withPackages (p: [
                     p.markdown
+                    p.pyyaml
                   ])
                 )
 
               ];
-
-              shellHook = ''
-                # add latex sty and cls files to search path
-                export TEXINPUTS=$(pwd)/tex:
-                # needed for lualatex on remote action runner
-                export LC_ALL=C
-              '';
             }
         );
       };

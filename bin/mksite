@@ -2,17 +2,130 @@
 
 import pathlib
 import shutil
+from typing import Dict, Iterable, List, Union
 
 import markdown
+import yaml
 
 PAGES_DIR = pathlib.Path("./pages")
 STATIC_DIR = pathlib.Path("./static")
-DEST_DIR = pathlib.Path("./build")
-PAGE_TEMPLATE = pathlib.Path('./template.html')
+DEST_DIR = pathlib.Path("./_build")
+PAGE_TEMPLATE = pathlib.Path('./templates/template.html')
+FRONT_TEMPLATE = pathlib.Path('./templates/front_template.html')
+FRONT_YAML = pathlib.Path("./frontpage.yaml")
 
 
 def _list_files(path):
     return filter(lambda x: x.is_file(), path.glob('**/*'))
+
+
+def _render_markdown(text: str) -> str:
+    """Render markdown with preserved line breaks."""
+    return markdown.markdown(text, extensions=['nl2br'])
+
+
+def _render_dl_entry(term: str, definition_html: str) -> str:
+    return f"""
+<div class="md:grid md:grid-cols-[140px_1fr] items-start gap-3 py-1">
+    <div class="md:text-right font-semibold text-slate-800">{term}</div>
+    <div class="text-slate-800">{definition_html}</div>
+    <div class="hidden md:block"></div>
+</div>
+"""
+
+
+def _render_contact_entries(me: Dict[str, str]) -> str:
+    entries: List[str] = []
+    email = me.get('email')
+    if email:
+        email_html = f'<a href="mailto:{email}">{email}</a>'
+        entries.append(_render_dl_entry('email', email_html))
+
+    office = me.get('office')
+    if office:
+        office_html = _render_markdown(office)
+        entries.append(_render_dl_entry('office', office_html))
+
+    office_hours = me.get('office_hours')
+    if office_hours:
+        hours_html = _render_markdown(office_hours)
+        entries.append(_render_dl_entry('office hours', hours_html))
+
+    return '\n'.join(entries)
+
+
+def _render_section(name: str, content: Union[str, Iterable[str]]) -> str:
+    heading = name.replace('_', ' ')
+    if isinstance(content, str):
+        body_html = _render_markdown(content)
+    else:
+        items = ''.join(
+            f'<li>\n{_render_markdown(item)}\n</li>\n'
+            for item in content
+        )
+        body_html = f'<ul class="achievements list-disc pl-5 space-y-1.5 text-base leading-relaxed text-slate-800">\n{items}</ul>'
+
+    return _render_dl_entry(heading, body_html)
+
+
+def build_front_page():
+    with FRONT_YAML.open() as fileobj:
+        data = yaml.safe_load(fileobj)
+
+    title = data.get('title', 'home')
+    me = data.get('me', {})
+    sections = data.get('sections', {})
+
+    blurb_html = _render_markdown(me.get('blurb', ''))
+    photo_src = me.get('photo', '')
+    photo_alt = me.get('photo_alt', '')
+    name = me.get('name', '')
+
+    # For small screens, inject name inline into blurb (hidden on md+)
+    # Use titlecase for inline version, lowercase for h1
+    blurb_with_inline_name = blurb_html.replace(
+        '<p>',
+        f'<p><span class="md:hidden font-bold">{name.title()} </span>',
+        1  # Only replace first occurrence
+    )
+
+    contacts_html = _render_contact_entries(me)
+
+    section_html_parts = []
+    for section_name, section_content in sections.items():
+        section_html_parts.append(_render_section(section_name, section_content))
+    sections_html = ''.join(section_html_parts)
+
+    body_html = f"""
+<div class="flex flex-col items-center md:items-start gap-4 md:pl-[152px]">
+    <img class="w-32 md:w-1/2 max-w-md rounded-xl object-cover shadow-lg shadow-slate-400" id="me" src="{photo_src}" alt="{photo_alt}">
+
+    <h1 class="hidden md:block text-3xl font-semibold text-slate-900">{name}</h1>
+    <div class="text-left text-base text-slate-800 leading-relaxed">
+        {blurb_with_inline_name}
+    </div>
+</div>
+
+<hr class="md:hidden mx-auto my-4">
+
+<div class="mt-3 space-y-1">
+{contacts_html}
+{sections_html}
+</div>
+""".strip()
+
+    with FRONT_TEMPLATE.open() as fileobj:
+        template = fileobj.read()
+
+    html = (template
+        .replace('{{TITLE}}', title)
+        .replace('{{BODY}}', body_html)
+    )
+
+    DEST_DIR.mkdir(exist_ok=True)
+    output_path = DEST_DIR / 'index.html'
+    with output_path.open('w') as fileobj:
+        fileobj.write(html)
 
 
 def convert_markdown_to_html(raw_markdown, path_to_root):
@@ -65,9 +178,14 @@ def build_website():
 
     src_file_paths = _list_files(PAGES_DIR)
     for src_file_path in src_file_paths:
+        rel_src_file_path = src_file_path.relative_to(PAGES_DIR)
+        if rel_src_file_path.as_posix() == 'index.html':
+            # Front page is generated from YAML; skip the legacy HTML.
+            continue
         build_page(src_file_path)
 
     shutil.copytree(STATIC_DIR, DEST_DIR / 'static', dirs_exist_ok=True)
+    build_front_page()
 
 
 if __name__ == "__main__":
