@@ -6,6 +6,12 @@
     }
 }
 
+img#me {
+    transition: transform 0.2s ease;
+    --pulse-up: 1.06;
+    --pulse-down: 0.97;
+}
+
 div#intro {
     margin-top: 7.5%;
 }
@@ -62,8 +68,8 @@ a:hover {
 
 @keyframes portrait-pulse {
     0% { transform: scale(1); }
-    40% { transform: scale(1.06); }
-    70% { transform: scale(0.97); }
+    40% { transform: scale(var(--pulse-up, 1.06)); }
+    70% { transform: scale(var(--pulse-down, 0.97)); }
     100% { transform: scale(1); }
 }
 
