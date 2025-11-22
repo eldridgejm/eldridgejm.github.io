@@ -81,7 +81,7 @@
               clickTimes = clickTimes.filter((t) => now - t < clickWindowMs);
               clickTimes.push(now);
 
-              if (clickTimes.length >= 2 && !bouncing) {
+              if (clickTimes.length >= 3 && !bouncing) {
                 // Easter egg: bounce the portrait like a DVD logo.
                 startBounce();
               }
