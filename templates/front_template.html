@@ -69,12 +69,18 @@
             let bouncing = false;
             let pulseCount = 0;
 
-            const handlePortraitClick = () => {
+            const handlePortraitClick = (forceBounce = false) => {
               pulseCount = Math.min(pulseCount + 1, 3);
               triggerPulse(pulseCount);
 
               if (bouncing) {
                 window.open('https://www.youtube.com/watch?time_continue=1&v=QOtuX0jL85Y&embeds_referring_euri=https%3A%2F%2Fwww.google.com%2Fsearch%3Fclient%3Dsafari%26rls%3Den%26q%3Dyoutube%2Boffice%2Bdvd%2Bbounce%26ie%3DUTF-8%26oe%3DUTF-8&source_ve_path=Mjg2NjY', '_blank', 'noopener,noreferrer');
+                return;
+              }
+
+              if (forceBounce && !bouncing) {
+                startBounce();
+                clickCount = 0;
                 return;
               }
 
@@ -86,10 +92,10 @@
               }
             };
 
-            portrait.addEventListener('click', handlePortraitClick);
+            portrait.addEventListener('click', () => handlePortraitClick());
             portrait.addEventListener('contextmenu', (event) => {
               event.preventDefault();
-              handlePortraitClick();
+              handlePortraitClick(true);
             });
 
             function startBounce() {
