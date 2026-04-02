@@ -12,7 +12,7 @@ me:
 # Content sections. Each key under `sections` is the section name.
 # The value is either a single Markdown string or a list of Markdown strings.
 sections:
-  teaching: "[DSC 140B](http://dsc140b.com)"
+  teaching: "[DSC 190 - Tools of the Trade](https://github.com/dsc-courses/dsc190-tools-2026-sp)"
   publications:
     - |
       *Unperturbed: spectral analysis beyond Davis-Kahan.*
